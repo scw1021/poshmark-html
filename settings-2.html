@@ -1,0 +1,444 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">     
+    <title></title>
+
+	<!-- jquery -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- range-slider -->
+    <script src="js/range-slider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/range-slider.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+	  	<div class="row">
+	    	<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse pt-0">
+	      		<div class="position-sticky pt-3">
+	      			<div class="sidebar-header">
+	      				<div class="sidebar-header-wrap">
+	      					<div class="user-details text-white">
+	      						<h3>John</h3>
+	      						<!-- <p class="off-white">johnstones@gmail.com</p> -->
+	      					</div>
+	      					<div class="icon purple-bg"><img src="images/icons/settings.png" alt=""></div>
+	      					<div class="close-sidebar ms-auto">
+	      						<button><img src="images/icons/close-white-bg.png" alt=""></button>
+	      					</div>
+	      				</div>
+	      			</div>
+		      		<h4 class="off-white">Menu</h4>
+	        		<ul class="nav flex-column">
+			          	<li class="nav-item">
+			            	<a class="nav-link" aria-current="page" href="index.html">
+			              		<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+			             		Dashboard
+			            	</a>
+			          	</li>
+	          			<li class="nav-item">
+	            			<a class="nav-link" href="user-account.html">
+	              				<div class="icon green-bg"><img src="images/icons/user.png" alt=""></div>
+              					User Account
+			            	</a>
+			          	</li>
+				        <li class="nav-item">
+				            <a class="nav-link" href="billing.html">
+				              	<div class="icon dark-blue-bg"><img src="images/icons/Group.png" alt=""></div>
+				              	Billing & Invoice
+				            </a>
+				        </li>
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="support.html">
+			              		<div class="icon red-new-bg"><img src="images/icons/help.png" alt=""></div>
+			              		Support
+			            	</a>
+			          	</li>
+			          	<li class="nav-item">
+				            <a class="nav-link active" href="settings.html">
+				              	<div class="icon purple-bg"><img src="images/icons/settings.png" alt=""></div>
+				             	Settings
+				            </a>
+			          	</li>
+	        		</ul>	        
+		      	</div>
+		    </nav>
+		    <!-- nav-end -->
+
+		    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+		    	<div class="mobile-header">
+		    		<div class="row">
+		    			<div class="col-6 d-flex align-items-center">
+		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+								<img src="images/icons/menu-bar.png" align="">
+							</button>
+							<div class="logo-wrap">
+								<a class="logo" href="#">
+									<img src="images/logo.png" align="">
+								</a>
+							</div>
+		    			</div>
+		    			<div class="col-6 text-right">
+		    				<h3>John</h3>
+		    				<p class="tiny-text">johnstones@gmail.com</p>
+		    			</div>
+		    		</div>			    	
+		    	</div>
+		    	<!-- mobile-header-end -->
+
+		      	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		        	<h1 class="text-uppercase">SETTINGS</h1>
+		    	</div>
+
+		    	<div class="row">
+		    		<div class="col-lg-4">
+		    			<div class="card px-3 py-4 mb-3">
+		    				<div class="">
+		    					<h2>Connect Poshmark</h2>
+		    					<div class="d-flex align-items-center">
+		    						<div class="user-setting-detail">	
+			    						<h4>John</h4>	    						
+			    						<p class="tiny-text">johnstones@gmail.com</p>
+			    					</div>
+			    					<div class="right ms-auto">
+				    					<a class="add-btn red-bg" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="me-1" src="images/icons/unlink.png" align="">Unlink</a>
+				    				</div>
+		    					</div>
+		    				</div>
+	    				</div>
+
+	    				<div class="card">
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Unfollow</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">Auto Unfollow automatically unfollows users you have followed but have not followed you back within 7 days.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Share</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically shares your product listings to your followers and / or Posh Parties to give more visibility.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Reorganize Closet</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically reorganizes any live product listings in your closet to boost visibility. </p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Bundles</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically sends users that like your listings bundles filled with products they will love.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Reorganize Closet</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically reorganizes any live product listings in your closet to boost visibility. </p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Bundles</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically sends users that like your listings bundles filled with products they will love.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+	    				</div>
+
+	    			</div>
+	    			<!-- col-md-4 end -->
+
+	    			<div class="col-lg-4 mb-3">
+	    				<div class="card mb-3">
+	    					<div class="setting-box px-3 py-4">
+		    					<h2>Auto Follow</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">Auto Unfollow automatically unfollows users you have followed but have not followed you back within 7 days.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Likes</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically shares your product listings to your followers and / or Posh Parties to give more visibility.</p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+
+		    				<div class="setting-box px-3 py-4">
+		    					<h2>Auto Offers</h2>
+		    					<div class="d-flex align-items-center">		    						
+		    						<p class="my-1 me-2">This module automatically reorganizes any live product listings in your closet to boost visibility. </p>
+			    					<div class="right ms-auto">
+				    					<p>
+										  	<label class="toggleSwitch nolabel" onclick="">
+										        <input type="checkbox" checked />
+										        <span>
+										            <span>OFF</span>
+										            <span>ON</span>
+										        </span>
+										        <a></a>
+										    </label>
+										</p>
+				    				</div>
+		    					</div>
+		    				</div>
+	    				</div>
+
+	    				<div class="row my-4">
+	    					<div class="col-md-12">
+	    						<a class="btn-3 w-100 text-center" href="#">Update Settings</a>
+	    					</div>
+	    				</div>
+
+	    			</div>
+	    			<!-- col-md-4 end -->
+
+	    		</div>
+
+			</main>
+		</div>
+	</div>
+
+	<!-- #CredentialsModel -->
+
+
+	<!-- Modal -->
+	<div class="modal fade credentialsModal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      	<div class="modal-header">
+	        	<h5 class="modal-title text-center" id="staticBackdropLabel">Enter your credentials</h5>
+	        	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+	      	</div>
+	      	<div class="modal-body">
+		        <form class="modal-form">
+                  <div class="form-group">
+                    <img class="mx-auto d-block" src="images/icons/mark.png">
+                  </div>
+
+                  <div class="form-group">
+                    <span class="mark-font">POSHMARK</span>
+                  </div>
+
+                  <div class="input-group rounded-left">
+                    <input id="user" class="form-control border-right-0 input-size" type="text" placeholder="Username or Email" required="">
+                    <span class="input-group-append bg-white border-left-0 radius-maker">
+                      <span class="input-group-text bg-transparent">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </span>
+                    </span>
+                  </div>
+
+                  <div class="input-group rounded-right spacer">
+                    <input id="pwd" class="form-control border-right-0 input-size" type="password" placeholder="Password" required="">
+                    <span class="input-group-append bg-white border-left-0 radius-maker">
+                      <span class="input-group-text bg-transparent">
+                        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                      </span>
+                    </span>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="submit" name="" value="Login" class="login-bt spacer" data-bs-toggle="modal" data-bs-target="#cogratulations-popup" data-bs-dismiss="modal" aria-label="Close">
+                  </div>
+
+                  <div class="form-group">
+                    <a href="#" class="modal-title spacer">Forgot password?</a>
+                  </div>
+                </form>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- modal 1-->
+
+	<div class="modal fade" id="cogratulations-popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content text-center">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">CONGRATULATIONS!!!</h5>
+	        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+	        			<!-- <img src="images/icons/close-black.png" alt=""> -->
+	        		</button>
+	      		</div>
+			    <div class="modal-body">
+			        <p>Your PoshMArk Account is connected successfully</p>
+	      			<div class="row justify-content-center">
+	      				<div class="col-8">
+	      					<button type="button" class="btn-3 px-3 px-md-5" data-bs-dismiss="modal">Thank You!</button>
+	      				</div>
+	      			</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		function increaseValue() {
+		  var value = parseInt(document.getElementById('number').value, 10);
+		  value = isNaN(value) ? 0 : value;
+		  value++;
+		  document.getElementById('number').value = value;
+		}
+
+		function decreaseValue() {
+		  var value = parseInt(document.getElementById('number').value, 10);
+		  value = isNaN(value) ? 0 : value;
+		  value < 1 ? value = 1 : '';
+		  value--;
+		  document.getElementById('number').value = value;
+		}
+
+
+		$(function () {
+
+		    set_($('#first-value'), 100);  
+		    set_($('#sec-value'), 100);    
+		    set_($('#three-value'), 100);  
+
+		    function set_(_this, max) {
+		        var block = _this.parent();
+
+		        block.find(".increase").click(function () {
+		            var currentVal = parseInt(_this.val());
+		            if (currentVal != NaN && (currentVal + 1) <= max) {
+		                _this.val(currentVal + 1);
+		            }
+		        });
+
+		        block.find(".decrease").click(function () {
+		            var currentVal = parseInt(_this.val());
+		            if (currentVal != NaN && currentVal != 0) {
+		                _this.val(currentVal - 1);
+		            }
+		        });
+		    }
+		});
+
+	</script>
+</body>
+</html>

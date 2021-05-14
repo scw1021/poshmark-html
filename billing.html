@@ -1,0 +1,649 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">     
+    <title></title>
+
+	<!-- jquery -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+	  	<div class="row">
+	    	<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse pt-0">
+	      		<div class="position-sticky pt-3">
+	      			<div class="sidebar-header">
+	      				<div class="sidebar-header-wrap">
+	      					<div class="user-details text-white">
+	      						<h3>John</h3>
+	      						<!-- <p class="off-white">johnstones@gmail.com</p> -->
+	      					</div>
+	      					<div class="icon dark-blue-bg"><img src="images/icons-svg/billing.svg" alt=""></div>
+	      					<div class="close-sidebar ms-auto">
+	      						<button><img src="images/icons-svg/close-white-bg.svg" alt=""></button>
+	      					</div>
+	      				</div>
+	      			</div>
+		      		<h4 class="off-white">Menu</h4>
+	        		<ul class="nav flex-column">
+			          	<li class="nav-item">
+			            	<a class="nav-link" aria-current="page" href="index.html">
+			              		<div class="icon orange-bg"><img src="images/icons-svg/dashboard.svg" alt=""></div>
+			             		Dashboard
+			            	</a>
+			          	</li>
+	          			<li class="nav-item">
+	            			<a class="nav-link" href="user-account.html">
+	              				<div class="icon green-bg"><img src="images/icons-svg/user.svg" alt=""></div>
+              					User Account
+			            	</a>
+			          	</li>
+				        <li class="nav-item">
+				            <a class="nav-link active" href="billing.html">
+				              	<div class="icon dark-blue-bg"><img src="images/icons-svg/billing.svg" alt=""></div>
+				              	Billing & Invoice
+				            </a>
+				        </li>
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="support.html">
+			              		<div class="icon red-new-bg"><img src="images/icons-svg/help.svg" alt=""></div>
+			              		Support
+			            	</a>
+			          	</li>
+			          	<li class="nav-item">
+				            <a class="nav-link" href="settings.html">
+				              	<div class="icon purple-bg"><img src="images/icons-svg/settings.svg" alt=""></div>
+				             	Settings
+				            </a>
+			          	</li>
+	        		</ul>	        
+		      	</div>
+		    </nav>
+		    <!-- nav-end -->
+
+		    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+		    	<div class="mobile-header">
+		    		<div class="row">
+		    			<div class="col-6 d-flex align-items-center">
+		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+								<img src="images/icons-svg/menu-bar.svg" align="">
+							</button>
+							<div class="logo-wrap">
+								<a class="logo" href="#">
+									<img src="images/logo.svg" align="">
+								</a>
+							</div>
+		    			</div>
+		    			<div class="col-6 text-right">
+		    				<h3>John</h3>
+		    				<p class="tiny-text">johnstones@gmail.com</p>
+		    			</div>
+		    		</div>			    	
+		    	</div>
+		    	<!-- mobile-header-end -->
+
+		      	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		        	<h1 class="text-uppercase">BILLING</h1>
+		    	</div>
+
+		    	<div class="row">
+		    		<div class="col-lg-7">
+		    			<div class="card mb-5 p-3 h-100">
+			    			<div class="row">
+			    				<div class="col-lg-12">
+			    					<h2>Your Package</h2>
+			    				</div>
+			    				<div class="col-lg-12">
+			    					<div class="Package-box-wrap">
+				    					<div class="Package-box-col active-package">
+				    						<div class="Package-box">
+				    							<div class="Package-header">
+				    								<h2>Bronze</h2>
+				    							</div>
+				    							<div class="Package-body">
+				    								<h2 class="green-text text-center mb-0"><i class="fa fa-check" aria-hidden="true"></i> Current Plan</h2>
+				    								<h3><span class="big-text">$45</span>/month</h3>
+				    								<h4>FEATURES</h4>
+				    								<ul>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    								</ul>
+
+				    								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#bronze-pack">Renew Package</a></p>
+				    							</div>
+				    						</div>
+				    					</div>
+				    					<!-- package-col-end -->
+
+				    					<div class="Package-box-col">
+				    						<div class="Package-box">
+				    							<div class="Package-header">
+				    								<h2>Silver</h2>
+				    							</div>
+				    							<div class="Package-body">
+				    								<h3><span class="big-text">$55</span>/month</h3>
+				    								<h4>FEATURES</h4>
+				    								<ul>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    								</ul>
+
+				    								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#silver-pack">Upgrade Package</a></p>
+				    							</div>
+				    						</div>
+				    					</div>
+				    					<!-- package-col-end -->
+
+				    					<div class="Package-box-col">
+				    						<div class="Package-box">
+				    							<div class="Package-header">
+				    								<h2>Gold</h2>
+				    							</div>
+				    							<div class="Package-body">
+				    								<h3><span class="big-text">$65</span>/month</h3>
+				    								<h4>FEATURES</h4>
+				    								<ul>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+				    								</ul>
+
+				    								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#gold-pack">Upgrade Package</a></p>
+				    							</div>
+				    						</div>
+				    					</div>
+				    					<!-- package-col-end -->
+
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<!-- package-row-end -->
+
+			    			<div class="row mt-5">
+			    				<div class="col-lg-12 mb-3">
+			    					<h2>Payment Method</h2>
+			    				</div>
+			    				<div class="col-lg-12">
+			    					<div class="payment-method-row">	
+			    						<div class="payment-method">
+			    							<div class="payment-card p-3">
+			    								<div class="payment-card-wrap">
+				    								<div class="card-top d-flex">
+				    									<p class="">Credit Card</p>
+				    									<a class="ms-auto" href="#"><img src="images/icons-svg/trash.svg"></a>
+				    								</div>
+				    								<div class="card-number">
+				    									<h2 class="text-center text-white my-1">****  ****  ****  **34</h2>
+				    								</div>
+				    								<div class="card-bottom d-flex">
+				    									<img class="me-2" src="images/icons-svg/card-chip.svg">
+				    									<div class="card-details">
+				    										<p class="m-0">EXP <strong>11/22</strong></p>
+				    										<p class="m-0">Johson Stewart</p>
+				    									</div>
+				    								</div>
+				    							</div>
+			    							</div>
+			    							<p class="default-card">Default Card</p>
+			    						</div>
+
+			    						<div class="payment-method">
+			    							<div class="payment-method-box d-flex justify-content-center align-items-center">
+			    								<a class="btn-3" href="#open-modal">Add Payment Method</a>
+
+													<div id="open-modal" class="modal-window">
+														<div>
+														    <a href="#" title="Close" class="modal-close"><img src="images/icons-svg/close-black.svg" alt=""></a>
+														    <h1>NEW CARD</h1>
+														    <form class="row g-3 custom-form">
+															  <div class="col-12">
+															  	<div class="form-group mb-0">
+																    <label for="" class="">Card Number</label>
+																    <input type="password" class="form-control" id="" placeholder="**** **** **** ****" required>
+																</div>
+															  </div>
+															  <div class="col-12">
+															  	<div class="form-group mb-0">
+																    <label for="" class="">Name</label>
+																    <input type="text" class="form-control" id="" placeholder="Your full name" required>
+																</div>
+															  </div>
+
+															  <div class="col-6">
+															  	<div class="form-group mb-0">
+																    <label for="" class="">CCV</label>
+																    <input type="text" class="form-control" id="" placeholder="ccv" required>
+																</div>
+															  </div>
+
+															  <div class="col-6">
+															  	<div class="form-group mb-0">
+																    <label for="inputPassword2" class="">EXP Date</label>
+																    <input type="text" class="form-control" id="" placeholder="mm/yy" required>
+																</div>
+															  </div>
+															  <div class="col-12">
+															  	<p class="text-right mb-0">
+															  		<span class="label-text">Set as default</span>
+																  <label class="toggleSwitch" onclick="" required>
+																        <input type="checkbox" />
+																        <span>
+																            <span>On</span>
+																            <span>Off</span>																            
+																        </span>
+																        <a></a>
+																    </label>
+																</p>
+															  </div>
+
+															  <div class="col-12">
+															    <button type="submit" class="btn-3 w-100 text-center">Add Card</button>
+															  </div>
+															</form>
+														</div>
+												</div>
+			    							</div>
+			    						</div>
+			    					</div>
+				    					
+				    			</div>
+				    		</div>
+				    		<!--payment-method-row-end -->
+				    							
+		    			</div>
+	    			</div>
+	    			<div class="col-lg-5">
+	    				<div class="card h-100 invoice-card mb-3">
+			    			<div class="row">
+			    				<div class="col-lg-12 m3-5">
+			    					<h2 class="p-3">INVOICES</h2>
+			    				</div>
+			    				<div class="col-lg-12">
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+			    					<div class="Invoice-detail-box p-3">
+			    						<h5 class="mt-0">Period for SuperPorch Basic</h5>
+			    						<div class="d-flex w-100 align-items-center">
+			    							<div class="price">
+			    								<p>$45</p>
+			    							</div>
+			    							<div class="date mx-auto">
+			    								<p class="tiny-text">Transaction Date: <strong>12 jan 2020</strong></p>
+			    							</div>
+			    							<div class="status mx-auto">
+			    								<p class="tiny-text">Status: <strong class="green-text">Paid</strong></p>
+			    							</div>
+			    							<div class="activty-btn d-flex ms-sm-auto">
+			    								<a class="btn view-single-invoice-card" href="#"><img src="images/icons-svg/view.svg" alt=""></a>
+			    								<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+			    							</div>
+			    						</div>
+			    					</div>
+			    					<!-- invoice-details-end -->
+
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<!-- card-end -->
+
+			    		<div class="card h-100 pb-5 single-invoice-card">
+	    					<div class="activty-btn print-download">
+		    					<a class="btn" href="#"><img src="images/icons-svg/download.svg" alt=""></a>
+		    				</div>
+			    			<div class="row">
+			    				<div class="col-lg-12 m3-5 d-flex align-items-center">
+			    					<h2 class="p-3">INVOICES</h2>
+			    					<div class="close-btn ms-auto me-3"><img src="images/icons-svg/close-blue-bg.svg" alt=""></div>
+			    				</div>
+			    				<div class="col-lg-12">
+			    					<div class="invoice-detail-single">
+
+			    						<div class="row single-invoice-header">
+							    			<div class="col-6">
+												<div class="logo-wrap mb-3">
+													<a class="logo" href="#">
+														<img src="images/logo-black.svg" align="">
+													</a>
+												</div>
+												<p class="invoice-info-text">Invoice No: <strong>373262</strong></p>
+							    			</div>
+							    			<div class="col-6 text-right">
+							    				<h3>John</h3>
+							    				<p class="tiny-text">johnstones@gmail.com</p>
+							    			</div>
+							    		</div>
+							    		<!-- single-invoice-header -->
+
+							    		<div class="row billing-address align-items-center">
+							    			<div class="col-6">
+							    				<h4>Billing Address</h4>
+							    				<p class="tiny-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid</p>
+							    			</div>
+							    			<div class="col-6 text-right">
+							    				<p class="paid green-text">PAID!!!</p>
+							    			</div>
+							    		</div>
+
+							    		<div class="row billing-address">
+							    			<div class="col-6">
+							    				<p class="invoice-info-text">Date of Transaction: <strong>3 Jan 2021</strong></p>
+							    			</div>
+							    			<div class="col-6 text-right">
+							    				<p class="invoice-info-text">Order Date: <strong>3 Jan 2020</strong></p>
+							    			</div>
+							    		</div>
+
+			    					</div>
+			    					<!--  -->
+
+			    					<div class="single-invoice-description px-3">
+			    						<div class="row border-bottom mb-3">
+			    							<div class="col-6">
+			    								<h4>Description</h4>
+			    								<p>Super Posh Basic</p>			    								
+			    							</div>
+			    							<div class="col-6 d-flex justify-content-between">
+			    								<div class="text-center">
+			    									<h4>Tax</h4>
+				    								<p>%5</p>	
+			    								</div>
+			    								<div class="text-center">
+			    									<h4>Qty</h4>
+				    								<p>1</p>	
+			    								</div>
+			    								<div class="text-right">
+			    									<h4>Sub-Total</h4>
+				    								<p>54$</p>	
+			    								</div>
+			    							</div>
+			    						</div>
+
+			    						<div class="row">
+			    							<div class="col-6">			    								
+			    								<p>Payment Type</p>		
+			    								<h4>Credit Card</h4>	    								
+			    							</div>
+			    							<div class="col-6 d-flex justify-content-between">
+			    								<ul class="payment-type-list">
+			    									<li><span class="title">Total Excluding Vat</span> <span class="value">54$</span></li>
+			    									<li><span class="title">Vat</span> <span class="value">54$</span></li>
+			    									<li><span class="title">Total Including Vat</span> <span class="value">54$</span></li>
+			    									<li class="total-payment"><span class="title">Total</span> <span class="value">54$</span></li>
+			    								</ul>
+			    							</div>
+			    						</div>
+			    					</div>
+
+			    				</div>
+			    			</div>
+			    		</div>
+
+			    		<!-- card-end -->
+	    			</div>
+	    		</div>
+			</main>
+		</div>
+	</div>
+
+
+
+	<!-- modal-1 -->
+	<div class="modal fade package-modal" id="bronze-pack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content">
+	      		
+			    <div class="modal-body">
+			        <div class="Package-box-col">
+						<div class="Package-box">
+							<div class="Package-header">
+								<h2>Bronze</h2>
+							</div>
+							<div class="Package-body">
+								<h2 class="green-text text-center mb-0"><i class="fa fa-check" aria-hidden="true"></i> Current Plan</h2>
+								<h3><span class="big-text">$45</span>/month</h3>
+								<h4>FEATURES</h4>
+								<ul>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+								</ul>
+
+								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#cogratulations-popup" data-bs-dismiss="modal" aria-label="Close" >Renew Package</a></p>
+							</div>
+						</div>
+					</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<!-- modal 1-->
+
+	<!-- modal-1 -->
+	<div class="modal fade package-modal" id="silver-pack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content">
+	      		
+			    <div class="modal-body">
+			        <div class="Package-box-col">
+						<div class="Package-box">
+							<div class="Package-header">
+								<h2>Silver</h2>
+							</div>
+							<div class="Package-body">
+								<h3><span class="big-text">$55</span>/month</h3>
+								<h4>FEATURES</h4>
+								<ul>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+								</ul>
+
+								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#cogratulations-popup" data-bs-dismiss="modal" aria-label="Close" >Upgrade Package</a></p>
+							</div>
+						</div>
+					</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<!-- modal 1-->
+
+	<!-- modal-1 -->
+	<div class="modal fade package-modal" id="gold-pack" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content">
+	      		
+			    <div class="modal-body">
+			        <div class="Package-box-col">
+						<div class="Package-box">
+							<div class="Package-header">
+								<h2>Gold</h2>
+							</div>
+							<div class="Package-body">
+								<h3><span class="big-text">$65</span>/month</h3>
+								<h4>FEATURES</h4>
+								<ul>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+									<li><img class="me-2" src="images/icons-svg/check-icon.svg" alt=""> Feature 1</li>
+								</ul>
+
+								<p class="text-center"><a class="btn" href="#" data-bs-toggle="modal" data-bs-target="#cogratulations-popup" data-bs-dismiss="modal" aria-label="Close" >Upgrade Package</a></p>
+							</div>
+						</div>
+					</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<!-- modal 1-->
+
+	<div class="modal package-success fade" id="cogratulations-popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+	  	<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content text-center">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title">CONGRATULATIONS!!!</h5>
+	        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+	        			<!-- <img src="images/icons/close-black.png" alt=""> -->
+	        		</button>
+	      		</div>
+			    <div class="modal-body">
+			        <p>Your have upgraded your package to SuperPosh <br>Bronse</p>
+			        <p class="tiny-text">You will be billed</p>
+			        <h2>$55</h2>
+			        <p class="tiny-text"><strong>Every 21 Jan</strong></p>
+	      			<div class="row justify-content-center">
+	      				<div class="col-8">
+	      					<a href="#" class="btn-3 px-3 px-md-5" data-bs-dismiss="modal" aria-label="Close">Thank You!</a>
+	      				</div>
+	      			</div>
+	        		
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+	
+</body>
+</html>

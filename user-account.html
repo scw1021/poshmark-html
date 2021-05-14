@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">     
+    <title></title>
+
+	<!-- jquery -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+</head>
+<body>
+	<div class="container-fluid">
+	  	<div class="row">
+	    	<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse pt-0">
+	      		<div class="position-sticky pt-3">
+	      			<div class="sidebar-header">
+	      				<div class="sidebar-header-wrap">
+	      					<div class="user-details text-white">
+	      						<h3>John</h3>
+	      						<!-- <p class="off-white">johnstones@gmail.com</p> -->
+	      					</div>
+	      					<div class="icon green-bg"><img src="images/icons-svg/user.svg" alt=""></div>
+	      					<div class="close-sidebar ms-auto">
+	      						<button><img src="images/icons-svg/close-white-bg.svg" alt=""></button>
+	      					</div>
+	      				</div>
+	      			</div>
+		      		<h4 class="off-white">Menu</h4>
+	        		<ul class="nav flex-column">
+			          	<li class="nav-item">
+			            	<a class="nav-link" aria-current="page" href="index.html">
+			              		<div class="icon orange-bg"><img src="images/icons-svg/dashboard.svg" alt=""></div>
+			             		Dashboard
+			            	</a>
+			          	</li>
+	          			<li class="nav-item">
+	            			<a class="nav-link active" href="user-account.html">
+	              				<div class="icon green-bg"><img src="images/icons-svg/user.svg" alt=""></div>
+              					User Account
+			            	</a>
+			          	</li>
+				        <li class="nav-item">
+				            <a class="nav-link" href="billing.html">
+				              	<div class="icon dark-blue-bg"><img src="images/icons-svg/billing.svg" alt=""></div>
+				              	Billing & Invoice
+				            </a>
+				        </li>
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="support.html">
+			              		<div class="icon red-new-bg"><img src="images/icons-svg/help.svg" alt=""></div>
+			              		Support
+			            	</a>
+			          	</li>
+			          	<li class="nav-item">
+				            <a class="nav-link" href="settings.html">
+				              	<div class="icon purple-bg"><img src="images/icons-svg/settings.svg" alt=""></div>
+				             	Settings
+				            </a>
+			          	</li>
+	        		</ul>	        
+		      	</div>
+		    </nav>
+		    <!-- nav-end -->
+
+		    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+		    	<div class="mobile-header">
+		    		<div class="row">
+		    			<div class="col-6 d-flex align-items-center">
+		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+								<img src="images/icons/menu-bar.svg" align="">
+							</button>
+							<div class="logo-wrap">
+								<a class="logo" href="#">
+									<img src="images/logo.svg" align="">
+								</a>
+							</div>
+		    			</div>
+		    			<div class="col-6 text-right">
+		    				<h3>John</h3>
+		    				<p class="tiny-text">johnstones@gmail.com</p>
+		    			</div>
+		    		</div>			    	
+		    	</div>
+		    	<!-- mobile-header-end -->
+
+		      	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+		        	<h1 class="text-uppercase">USER ACCOUNT</h1>
+		    	</div>
+
+		    	<div class="row user-account-setting">
+		    		<div class="col-lg-5">
+		    			<div class="card p-3">
+		    				<div class="d-flex">
+			    				<h2>ACCOUNT SETTINGS</h2>
+			    				<a class="btn-icon ms-auto" href="account-setting.html"><img src="images/icons-svg/edit.svg" alt=""></a>
+			    			</div>
+			    			<h3>John Stones</h3>
+			    			<p>johnstones@gmail.com</p>
+
+			    			<div class="personal-information">
+			    				<h4 class="inner-heading">Personal Information</h4>
+
+			    				<div class="row">
+			    					<div class="col-6">
+			    						<p class="info-title">Email</p>
+			    						<p class="info-detail">johnstewart@gmail.com</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">Mobile</p>
+			    						<p class="info-detail">+12 328378238</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">Company Name</p>
+			    						<p class="info-detail">Joh Stewart Stores</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">Company URL</p>
+			    						<p class="info-detail">johnstewardstore.com</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">County</p>
+			    						<p class="info-detail">United States</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">State</p>
+			    						<p class="info-detail">United States</p>
+			    					</div>
+			    					<div class="col-6">
+			    						<p class="info-title">Address</p>
+			    						<p class="info-detail">Block 5</p>
+			    					</div>
+			    				</div>
+
+			    				<h4 class="inner-heading">Social</h4>
+
+			    				<ul class="social-list">
+			    					<li><a href="#"><img class="me-2" src="images/icons-svg/facebook.svg" align="">facebook.com/stewartstores</a></li>
+			    					<li><a href="#"><img class="me-2" src="images/icons-svg/instagram.svg" align="">instagram.com/stewartstores</a></li>
+			    					<li><a href="#"><img class="me-2" src="images/icons-svg/twitter.svg" align="">twitter.com/stewartstores</a></li>
+			    					<li><a href="#"><img class="me-2" src="images/icons-svg/linkedin.svg" align="">linkedin.com/stewartstores</a></li>
+			    				</ul>
+
+
+			    			</div>
+		    			</div>
+	    			</div>
+	    		</div>
+
+			</main>
+		</div>
+	</div>
+
+	
+</body>
+</html>

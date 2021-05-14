@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---------------*/
+@media screen and (max-width: 1200px){
+
+.Package-box-wrap {overflow-x: auto; overflow-y: visible; }
+.Package-box-col {min-width: 210px;}
+.Package-box:hover{transform: scale(1.2);}
+}
+/*---------------*/
+@media screen and (max-width: 1024px){
+
+}
+
+/*---------------*/
+@media screen and (max-width: 991px){
+
+}
+
+/*---------------*/
+@media screen and (min-width: 768px){
+.text-md-right{text-align: right;}
+}
+/*---------------*/
+@media screen and (max-width: 768px){
+
+}
+
+/*---------------*/
+@media screen and (max-width: 767px){
+.mobile-header{display: block;}
+nav#sidebarMenu.sidebar {max-width: 320px; top: 0; left: -1000%;
+transition:all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s; 
+-moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;}
+nav#sidebarMenu.sidebar.show{left: 0;}
+
+.sidebar .sidebar-header .icon.orange-bg{display: none;}
+nav#sidebarMenu.sidebar.show .close-sidebar{display: inline-block;}
+.footer{width: calc(100% - 30px);}
+}
+
+
+/*---------------*/
+@media screen and (max-width: 640px){
+}
+/*---------------*/
+@media screen and (max-width: 480px){
+.d-mobile-none{display: none !important;}
+.login-box{background-color: transparent;border:none;box-shadow: none;padding: 40px 15px; }
+.login-btn{padding: 10px;}
+.calendar-wrap .ui.form{min-width: 300px;}
+.activty-btn a.btn {width: 32px;height: 32px; margin: 0 2px 5px; padding: 5px;}
+.follow-list-options li a{background-color: #ffffff;}
+.user-account-setting p.info-title,.user-account-setting p.info-detail{font-size: 10px;}
+}
+
+
+/*---------------*/
+@media screen and (max-width: 400px){
+body{font-size: 12px;}
+#cogratulations-popup .modal-body{padding:0px 10px 20px;}
+#cogratulations-popup .modal-title{font-size: 18px;}
+#cogratulations-popup .modal-body p{font-size: 10px;}
+}

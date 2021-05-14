@@ -1,0 +1,1035 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">     
+    <title></title>
+
+	<!-- jquery -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+
+	<script src="js/chart.js"></script>
+
+	<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+
+</head>
+<body>
+	<div class="container-fluid">
+	  	<div class="row">
+	    	<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse pt-0">
+	      		<div class="position-sticky pt-3">
+	      			<div class="sidebar-header">
+	      				<div class="sidebar-header-wrap">
+	      					<div class="user-details text-white">
+	      						<h3>John</h3>
+	      						<p class="off-white">johnstones@gmail.com</p>
+	      					</div>
+	      					<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+	      					<div class="close-sidebar ms-auto">
+	      						<button><img src="images/icons/close-white-bg.png" alt=""></button>
+	      					</div>
+	      				</div>
+	      			</div>
+		      		<h4 class="off-white">Menu</h4>
+	        		<ul class="nav flex-column">
+			          	<li class="nav-item">
+			            	<a class="nav-link active" aria-current="page" href="index.html">
+			              		<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
+			             		Dashboard
+			            	</a>
+			          	</li>
+	          			<li class="nav-item">
+	            			<a class="nav-link" href="user-account.html">
+	              				<div class="icon green-bg"><img src="images/icons/user.png" alt=""></div>
+              					User Account
+			            	</a>
+			          	</li>
+				        <li class="nav-item">
+				            <a class="nav-link" href="billing.html">
+				              	<div class="icon dark-blue-bg"><img src="images/icons/Group.png" alt=""></div>
+				              	Billing & Invoice
+				            </a>
+				        </li>
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="support.html">
+			              		<div class="icon red-new-bg"><img src="images/icons/help.png" alt=""></div>
+			              		Support
+			            	</a>
+			          	</li>
+			          	<li class="nav-item">
+				            <a class="nav-link" href="settings.html">
+				              	<div class="icon purple-bg"><img src="images/icons/settings.png" alt=""></div>
+				             	Settings
+				            </a>
+			          	</li>
+	        		</ul>	        
+		      	</div>
+		    </nav>
+		    <!-- nav-end -->
+
+		    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mb-5">
+		    	<div class="mobile-header">
+		    		<div class="row">
+		    			<div class="col-6 d-flex align-items-center">
+		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
+								<img src="images/icons/menu-bar.png" align="">
+							</button>
+							<div class="logo-wrap">
+								<a class="logo" href="#">
+									<img src="images/logo.png" align="">
+								</a>
+							</div>
+		    			</div>
+		    			<div class="col-6 text-right">
+		    				<h3>John</h3>
+		    				<p class="tiny-text">johnstones@gmail.com</p>
+		    			</div>
+		    		</div>			    	
+		    	</div>
+		    	<!-- mobile-header-end -->
+
+		      	<div class="d-md-flex d-block align-items-center pt-3 pb-2 mb-3 border-bottom">
+		        	<h1 class="text-uppercase me-3">Dashboard</h1>
+		        	<div class="calendar-wrap">
+		        		<div class="date-box">
+		        			1 Nov 2020 - 30 Nov 2020
+		        			<i class="fa fa-calendar" aria-hidden="true"></i>
+		        		</div>
+
+		        		<div class="ui form">
+			                <div class="two fields">
+			                  	<div class="field">
+			                    	<div class="ui calendar" id="rangestart">
+			                      		<div class="ui input dark left icon">             
+					                        <input type="text" placeholder="From">
+					                        <i class="fa fa-calendar" aria-hidden="true"></i>
+			                      		</div>
+			                    	</div>
+			                  	</div>
+				                <div class="field">
+				                    <div class="ui calendar" id="rangeend">
+				                      	<div class="ui input left icon">
+				                        	<input type="text" placeholder="To">
+				                        	<i class="fa fa-calendar" aria-hidden="true"></i>
+				                      	</div>
+				                    </div>
+				                </div>
+			                </div>
+			            </div>
+		        	</div>
+		        	<!--  -->
+		    	</div>
+
+		    	<div class="row">
+		    		<div class="col-xs-12">
+		    			<div class="dashboard-activity-details">
+			    			<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Followers</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/followers.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Following</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/following.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Unfollowed</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/unfollowed.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Share</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/share.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<div class="col-6">
+				    						<p>People</p>
+				    						<h3>2.4K</h3>
+				    						<span class="ml-auto green-text tiny-text font-bold">
+				    							<img src="images/icons/up-icon.png" alt="">50%
+				    						</span>
+				    					</div>
+				    					<div class="col-6">
+					    					<p>Porsh Parties</p>
+					    					<h3>3.4K</h3>
+					    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+					    				</div>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Likes</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/likes.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Comments</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/comments.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+
+				    		<div class="activity-details-box">
+				    			<div class="card">
+				    				<div class="card-header d-flex align-items-center">
+				    					<h5 class="m-0 semi-bold"><a href="#">Offer Sent</a></h5>
+				    					<span class="ml-auto"><img src="images/icons/offer-sent.png" alt=""></span>
+				    				</div>
+				    				<div class="card-body d-flex align-items-center">
+				    					<h3>2.4K</h3>
+				    					<span class="ml-auto green-text tiny-text font-bold"><img src="images/icons/up-icon.png" alt=""> 30%</span>
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<!-- box-end -->
+				    	</div>
+		    		</div>
+		    	</div>
+		    	<!-- row-end -->
+
+		    	<div class="row">
+		    		<div class="col-lg-6">
+		    			<div class="row">
+		    				<div class="col-lg-6">
+				    			<div class="card mb-3">
+				    				<div class="card-header">
+				    					<div class="card-header-wrap pb-0 d-flex">
+					    					<div class="heading-left">
+						    					<h2 class="blue-text font-bold">Likes</h2>
+						    					<p class="tiny-text">All Likes Made</p>
+						    				</div>
+					    				</div>
+				    				</div>
+				    				<div class="card-body py-0">
+										<div class="media">
+											<div class="not-found-content">
+												<div class="not-found-content-wrap">
+													<div class="">
+														<img src="images/404-small-img.png" alt="">
+													</div>
+													<div class="light-text mb-3">
+														<h3>OOPS!</h3>
+														<p>No data available yet</p>
+													</div>
+													<p class="tiny-text">Please connect your PoshMark account on the 
+													<a href="settings.html">Settings</a> page to display data here’</p>
+												</div>
+											</div>
+											<!-- not-found-content -->                                                
+                                        </div>
+                                        <!-- media end -->                                     
+
+				    				</div>
+				    			</div>
+				    		</div>
+				    		<div class="col-lg-6">
+				    			<div class="card mb-3">
+				    				<div class="card-header">
+				    					<div class="card-header-wrap pb-0 d-flex">
+					    					<div class="heading-left">
+						    					<h2 class="blue-text font-bold">Offers Sent</h2>
+						    					<p class="tiny-text">All Offers Sent</p>
+						    				</div>
+					    				</div>
+				    				</div>
+				    				<div class="card-body py-0">
+										<div class="media">
+                                            <div class="not-found-content">
+												<div class="not-found-content-wrap">
+													<div class="">
+														<img src="images/404-small-img.png" alt="">
+													</div>
+													<div class="light-text mb-3">
+														<h3>OOPS!</h3>
+														<p>No data available yet</p>
+													</div>
+													<p class="tiny-text">Please connect your PoshMark account on the 
+													<a href="settings.html">Settings</a> page to display data here’</p>
+												</div>
+											</div>
+											<!-- not-found-content -->
+                                        </div>
+                                        <!-- media end -->
+                                        
+                                    </div>
+				    			</div>
+				    		</div>
+				    		<div class="col-xs-12">
+				    			<div class="card mb-3 graph-tab d-mobile-none">
+				    				<div class="card-body pt-0">
+				    					<ul class="nav nav-pills mb-3" id="pills-tab1" role="tablist">
+											<li class="nav-item" role="presentation">
+											    <button class="nav-link active" id="pills-followers-tab" data-bs-toggle="pill" data-bs-target="#pills-followers" type="button" role="tab" aria-controls="pills-followers" aria-selected="true">Followers</button>
+											</li>
+											<li class="nav-item" role="presentation">
+											    <button class="nav-link" id="pills-unfollowed-tab" data-bs-toggle="pill" data-bs-target="#pills-unfollowed" type="button" role="tab" aria-controls="pills-unfollowed" aria-selected="false">Unfollowed</button>
+											</li>
+											<li class="nav-item" role="presentation">
+											    <button class="nav-link" id="pills-following-tab" data-bs-toggle="pill" data-bs-target="#pills-following" type="button" role="tab" aria-controls="pills-following" aria-selected="false">Following</button>
+											</li>
+											<li class="nav-item" role="presentation">
+											    <button class="nav-link" id="pills-shares-tab" data-bs-toggle="pill" data-bs-target="#pills-shares" type="button" role="tab" aria-controls="pills-shares" aria-selected="false">Shares</button>
+											</li>
+											<li class="nav-item" role="presentation">
+											    <button class="nav-link" id="pills-comments-tab" data-bs-toggle="pill" data-bs-target="#pills-comments" type="button" role="tab" aria-controls="pills-comments" aria-selected="false">Comments</button>
+											</li>
+										</ul>
+										<div class="tab-content" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-followers" role="tabpanel" aria-labelledby="pills-followers-tab">
+												<h2>Followers and Following Chart </h2>
+												<ul class="graph-specification">
+													<li>Following <span class="rounded-circle red-bg dot"></span></li>
+													<li>Followers <span class="rounded-circle light-blue-bg dot"></span></li>
+												</ul>													
+												<div class="not-found-content">
+													<div class="not-found-content-wrap">
+														<div class="">
+															<img src="images/404-small-img.png" alt="">
+														</div>
+														<div class="light-text mb-3">
+															<h3>OOPS!</h3>
+															<p>No data available yet</p>
+														</div>
+														<p class="tiny-text">Please connect your PoshMark account on the 
+														<a href="settings.html">Settings</a> page to display data here’</p>
+													</div>
+												</div>
+												<!-- not-found-content -->
+
+											</div>
+											<div class="tab-pane fade" id="pills-unfollowed" role="tabpanel" aria-labelledby="pills-unfollowed-tab">2</div>
+											<div class="tab-pane fade" id="pills-following" role="tabpanel" aria-labelledby="pills-following-tab">3</div>
+											<div class="tab-pane fade" id="pills-shares" role="tabpanel" aria-labelledby="pills-shares-tab">4</div>
+											<div class="tab-pane fade" id="pills-comments" role="tabpanel" aria-labelledby="pills-comments-tab">5</div>
+										</div>
+									</div>
+								</div>
+								<!-- mobile-none -->
+
+								<div class="tab-container d-md-none">
+
+									<div class="tab-navigation">              
+									    <select id="select-box">
+									      <option value="1">Followers and Following</option>
+									      <option value="2">Option 2</option>
+									      <option value="3">Option 3</option>
+									      <option value="4">Option 4</option>
+									      <option value="5">Option 5</option>
+									    </select>
+									</div>
+										  
+								  	<div id="tab-1" class="tab-content1">
+								    	<h2>Followers and Following Chart </h2>
+										<ul class="graph-specification">
+											<li>Following <span class="rounded-circle red-bg dot"></span></li>
+											<li>Followers <span class="rounded-circle light-blue-bg dot"></span></li>
+										</ul>													
+											<div class="not-found-content">
+												<div class="not-found-content-wrap">
+													<div class="">
+														<img src="images/404-small-img.png" alt="">
+													</div>
+													<div class="light-text mb-3">
+														<h3>OOPS!</h3>
+														<p>No data available yet</p>
+													</div>
+													<p class="tiny-text">Please connect your PoshMark account on the 
+													<a href="settings.html">Settings</a> page to display data here’</p>
+												</div>
+											</div>
+											<!-- not-found-content -->
+								  	</div>
+								  	<div id="tab-2" class="tab-content1">
+								    This is tab 2 content.
+								  	</div>
+								  	<div id="tab-3" class="tab-content1">
+								    This is tab 3 content.
+								  	</div>
+								 	<div id="tab-4" class="tab-content1">
+								    This is tab 4 content.
+								  	</div>
+								  	<div id="tab-5" class="tab-content1">
+								    This is tab 5 content.
+								  	</div>
+										  
+								</div>
+				    					
+				    				
+				    		</div>
+				    	</div>
+		    		</div>
+
+		    		<div class="col-lg-6">
+		    			<div class="row">
+		    				<div class="col-lg-6">
+		    					<div class="card mb-3 follow-tab h-100">
+				    				<div class="card-header">
+				    					<div class="card-header-wrap pb-0 d-flex">
+					    					<div class="heading-left">
+						    					<h2 class="blue-text font-bold">Follow</h2>
+						    					<p class="tiny-text">Followers, Followed and Unfollowed</p>
+						    				</div>
+					    				</div>
+				    				</div>
+				    				<div class="card-body py-0">
+
+				    					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+										  <li class="nav-item" role="presentation">
+										    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Followers</button>
+										  </li>
+										  <li class="nav-item" role="presentation">
+										    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Followed</button>
+										  </li>
+										  <li class="nav-item" role="presentation">
+										    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Unfollowed</button>
+										  </li>
+										</ul>				    				
+
+										<div class="tab-content" id="pills-tabContent">
+  											<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+		                                        <div class="media">                                                        
+		                                            <div class="not-found-content">
+														<div class="not-found-content-wrap">
+															<div class="">
+																<img src="images/404-small-img.png" alt="">
+															</div>
+															<div class="light-text mb-3">
+																<h3>OOPS!</h3>
+																<p>No data available yet</p>
+															</div>
+															<p class="tiny-text">Please connect your PoshMark account on the 
+															<a href="settings.html">Settings</a> page to display data here’</p>
+														</div>
+													</div>
+													<!-- not-found-content -->
+		                                        </div>
+		                                        <!-- media end -->
+		                                    </div>
+
+		                                	<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+												<div class="media">                                                        
+		                                            <div class="not-found-content">
+														<div class="not-found-content-wrap">
+															<div class="">
+																<img src="images/404-small-img.png" alt="">
+															</div>
+															<div class="light-text mb-3">
+																<h3>OOPS!</h3>
+																<p>No data available yet</p>
+															</div>
+															<p class="tiny-text">Please connect your PoshMark account on the 
+															<a href="settings.html">Settings</a> page to display data here’</p>
+														</div>
+													</div>
+													<!-- not-found-content -->
+		                                        </div>
+		                                        <!-- media end -->
+
+		                                    </div>
+
+		                                	<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+												<div class="media">                                                        
+		                                            <div class="not-found-content">
+														<div class="not-found-content-wrap">
+															<div class="">
+																<img src="images/404-small-img.png" alt="">
+															</div>
+															<div class="light-text mb-3">
+																<h3>OOPS!</h3>
+																<p>No data available yet</p>
+															</div>
+															<p class="tiny-text">Please connect your PoshMark account on the 
+															<a href="settings.html">Settings</a> page to display data here’</p>
+														</div>
+													</div>
+													<!-- not-found-content -->
+		                                        </div>
+		                                        <!-- media end -->
+		                                    </div>
+		                                </div>
+
+                                    </div>
+                                </div>
+                                <!-- follow-end -->
+                            </div>
+		    				<div class="col-lg-6">
+		    					<div class="card mb-3">
+				    				<div class="card-header">
+				    					<div class="card-header-wrap pb-0 d-flex">
+					    					<div class="heading-left">
+						    					<h2 class="blue-text font-bold">Comments</h2>
+						    					<p class="tiny-text">All Comments Made</p>
+						    				</div>
+					    				</div>
+				    				</div>
+				    				<div class="card-body py-0">
+				    					<div class="media">
+                                            <div class="not-found-content">
+												<div class="not-found-content-wrap">
+													<div class="">
+														<img src="images/404-small-img.png" alt="">
+													</div>
+													<div class="light-text mb-3">
+														<h3>OOPS!</h3>
+														<p>No data available yet</p>
+													</div>
+													<p class="tiny-text">Please connect your PoshMark account on the 
+													<a href="settings.html">Settings</a> page to display data here’</p>
+												</div>
+											</div>
+											<!-- not-found-content -->
+                                        </div>
+                                        <!-- media end -->                                        
+				    				</div>
+				    			</div>
+				    			<!-- comments-end -->
+
+				    			<div class="card mb-3">
+				    				<div class="card-header">
+				    					<div class="card-header-wrap pb-0 d-flex">
+					    					<div class="heading-left">
+						    					<h2 class="blue-text font-bold">Shares</h2>
+						    					<p class="tiny-text">All Shared Products</p>
+						    				</div>
+					    				</div>
+				    				</div>
+				    				<div class="card-body py-0">
+				    					<div class="media">
+                                            <div class="not-found-content">
+												<div class="not-found-content-wrap">
+													<div class="">
+														<img src="images/404-small-img.png" alt="">
+													</div>
+													<div class="light-text mb-3">
+														<h3>OOPS!</h3>
+														<p>No data available yet</p>
+													</div>
+													<p class="tiny-text">Please connect your PoshMark account on the 
+													<a href="settings.html">Settings</a> page to display data here’</p>
+												</div>
+											</div>
+											<!-- not-found-content -->
+                                        </div>
+                                        <!-- media end -->                                        
+				    				</div>
+				    			</div>
+
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+
+	<!-- Modal -->
+	<div class="modal fade p-0" id="likes_full-view" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm modal-fullscreen-sm-down mt-0 ms-auto me-0">
+	    <div class="modal-content">
+	      <div class="modal-body p-0">
+	      	<div class="card mb-3">
+    				<div class="card-header">
+    					<div class="card-header-wrap pb-0 d-flex">
+	    					<div class="heading-left w-100">
+		    					<h2 class="blue-text font-bold">Likes</h2>
+		    					<p class="tiny-text">All Likes Made</p>
+
+		    					<div class="search-box">
+		    						<label for="exampleDataList" class="form-label">Datalist example</label>
+									<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search">
+									<datalist id="datalistOptions">
+									  <option value="San Francisco"></option>
+									  <option value="New York"></option>
+									  <option value="Seattle"></option>
+									  <option value="Los Angeles"></option>
+									  <option value="Chicago"></option>
+									</datalist>
+		    					</div>
+		    				</div>
+		    				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+		    					<img src="images/icons/close-blue-bg.png" alt="">
+		    				</button>
+	    				</div>
+    				</div>
+    				<div class="card-body py-0">
+						<div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="avatar me-2">
+                            	<img src="images/Mask Group.png" alt="">
+                            </div>
+                                        
+                            <div class="media-body overflow-hidden">
+                                <div class="mb-1">
+                                    <h6 class="text-truncate mb-0 mr-auto">Gucci Sweater</h6>
+                                    <p class="small text-muted text-nowrap mb-0">
+                                    	<span>2 h ago</span>
+                                    	<span><a href="#">@Judy Jane Designers Hand Bag</a></span>
+                                    </p>
+                                </div>
+                                <div class="row activity-btn d-flex">
+                                	<div class="col-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/likes.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto mx-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/comments.png" alt="">
+                                			2.2 K
+                                		</a>
+                                	</div>
+                                	<div class="col-auto ms-auto">
+                                		<a href="#">
+                                			<img class="me-2" src="images/icons/share.png" alt="">
+                                			2.2 K                                                			
+                                		</a>
+                                	</div>
+                                	
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+
+
+    				</div>
+    			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+			</main>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript">
+		$(".date-box").click(function(){
+		  	$(".ui.form").toggleClass("open");
+		});
+
+	    $('#rangestart').calendar({
+	      type: 'date',
+	      endCalendar: $('#rangeend')
+	    });
+	    $('#rangeend').calendar({
+	      type: 'date',
+	      startCalendar: $('#rangestart')
+	    });
+
+
+	</script>
+
+	<script>
+		var xValues = ["S", "M", "T", "W", "T" , "F" , "S"];
+		var barColors = ["red", "green","blue","orange","brown"];
+
+		new Chart("myChart", {
+		  type: "line",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		    borderColor: "blue",
+		    data: [300,550,900,320,500,650,600]
+		    },
+		    {
+		    borderColor: "red",
+		    data: [300,650,1200,400,700,900,880]
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      
+		    }
+		  }
+		});
+
+		new Chart("myChart1", {
+		  type: "line",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		    borderColor: "blue",
+		    data: [300,550,900,320,500,650,600]
+		    },
+		    {
+		    borderColor: "red",
+		    data: [300,650,1200,400,700,900,880]
+		    }]
+		  },
+		  options: {
+		    legend: {display: false},
+		    title: {
+		      display: true,
+		      
+		    }
+		  }
+		});
+	</script> 
+</body>
+</html>
