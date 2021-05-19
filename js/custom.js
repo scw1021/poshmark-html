@@ -1,12 +1,25 @@
 
 $(document).ready(function() {
 
+  //   $('.ui.form input[type="text"]').blur(function(){
+  //   tmpval = $(this).val();
+  //   if(tmpval == '') {
+  //       $(this).addClass('empty');
+  //       $(this).removeClass('not-empty');
+  //   } else {
+  //       $(this).addClass('not-empty');
+  //       $(this).removeClass('empty');
+  //   }
+  // });
+
   /////////////////////////////
 
-
-  $('#rangeend .popup.calendar .ui').click(function(e){
-      $('#rangeend .popup.calendar').addClass('hide-calender');
+  $(document).click(function(event) {
+    if (!$(event.target).closest(".ui.form,.date-box").length) {
+      $("body").find(".ui.form").removeClass("open");
+    }
   });
+
 	//////////////////////////////////////
 
 	$('.test').click(function(e){
@@ -21,9 +34,14 @@ $(document).ready(function() {
     	$(this).parents(".setting-box").parent().addClass('open-new-comment');
     });
 
-    $('.custom-checkbox').click(function(e){
+    $('.styled-checkbox').click(function(e){
+      $(this).parents(".settings-options").parent().removeClass('open-search-box');
+    });
+
+    $('.styled-checkbox.custom-checkbox').click(function(e){
       $(this).parents(".settings-options").parent().toggleClass('open-search-box');
     });
+    
 
 
 

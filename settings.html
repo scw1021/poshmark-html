@@ -86,7 +86,7 @@
 		    		<div class="row">
 		    			<div class="col-6 d-flex align-items-center">
 		    				<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation">
-								<img src="images/icons/menu-bar.svg" align="">
+								<img src="images/icons-svg/menu-bar.svg" align="">
 							</button>
 							<div class="logo-wrap">
 								<a class="logo" href="#">
@@ -254,7 +254,7 @@
 				    				</div>
 		    					</div>
 		    					<div class="settings-options">
-			    					<p class="mb-0 mt-2 no-of-follower">No. of Of Follower/Day</p>
+			    					<p class="mb-0 mt-2 no-of-follower">No. of Follower/Day</p>
 			    					<div class="range-slider mb-4">
 				                        <input type="text" class="js-range-slider" value="" />
 				                    </div>
@@ -354,7 +354,7 @@
 				    				</div>
 		    					</div>
 		    					<div class="settings-options">
-			    					<p class="no-of-follower mb-0 mt-2">No. of Of Follower/Day</p>
+			    					<p class="no-of-follower mb-0 mt-2">No. of Comments/Day</p>
 
 			    					<div class="range-slider mb-4">
 				                        <input type="text" class="js-range-slider" value="" />
@@ -374,11 +374,11 @@
 										    <input type="text" class="form-control" id="" placeholder="Comment">
 									  	</div>
 									  	<div class="col-xl-4 col-lg-5 col-4 form-group">
-									  		<fieldset>
-										    	<input type="button" value="" class="increase" />
-										    	<input type="text" id="first-value" value="0" />
-										        <input type="button" value="" class="decrease" />    
-										    </fieldset>	
+										    <div class="qtySelector text-center">
+				                              <div class="increaseQty"><img src="images/icons-svg/plus-bg.svg" alt=""></div>	
+				                              <span class="percentageinput"><input type="Number" class="qtyValue" value="1" /><span>%</span></span>
+				                              <div class="decreaseQty"><img src="images/icons-svg/minus-bg.svg" alt=""></div>
+				                            </div>
 										  	
 								  		</div>
 								  	</form>
@@ -547,46 +547,31 @@
 
 	<script type="text/javascript">
 
-		function increaseValue() {
-		  var value = parseInt(document.getElementById('number').value, 10);
-		  value = isNaN(value) ? 0 : value;
-		  value++;
-		  document.getElementById('number').value = value;
-		}
-
-		function decreaseValue() {
-		  var value = parseInt(document.getElementById('number').value, 10);
-		  value = isNaN(value) ? 0 : value;
-		  value < 1 ? value = 1 : '';
-		  value--;
-		  document.getElementById('number').value = value;
-		}
-
-
-		$(function () {
-
-		    set_($('#first-value'), 100);  
-		    set_($('#sec-value'), 100);    
-		    set_($('#three-value'), 100);  
-
-		    function set_(_this, max) {
-		        var block = _this.parent();
-
-		        block.find(".increase").click(function () {
-		            var currentVal = parseInt(_this.val());
-		            if (currentVal != NaN && (currentVal + 1) <= max) {
-		                _this.val(currentVal + 1);
-		            }
-		        });
-
-		        block.find(".decrease").click(function () {
-		            var currentVal = parseInt(_this.val());
-		            if (currentVal != NaN && currentVal != 0) {
-		                _this.val(currentVal - 1);
-		            }
-		        });
-		    }
-		});
+		var minVal = 1, maxVal = 100; 
+			$(".increaseQty").on('click', function(){
+			    var $parentElm = $(this).parents(".qtySelector");
+			    $(this).addClass("clicked");
+			    setTimeout(function(){
+			      $(".clicked").removeClass("clicked");
+			    },100);
+			    var value = $parentElm.find(".qtyValue").val();
+			    if (value < maxVal) {
+			      value++;
+			    }
+			    $parentElm.find(".qtyValue").val(value);
+			});
+			$(".decreaseQty").on('click', function(){
+			    var $parentElm = $(this).parents(".qtySelector");
+			    $(this).addClass("clicked");
+			    setTimeout(function(){
+			      $(".clicked").removeClass("clicked");
+			    },100);
+			    var value = $parentElm.find(".qtyValue").val();
+			    if (value > 1) {
+			      value--;
+			    }
+			    $parentElm.find(".qtyValue").val(value);
+			  });
 
 	</script>
 </body>

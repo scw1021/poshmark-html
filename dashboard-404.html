@@ -35,7 +35,6 @@
 	      				<div class="sidebar-header-wrap">
 	      					<div class="user-details text-white">
 	      						<h3>John</h3>
-	      						<p class="off-white">johnstones@gmail.com</p>
 	      					</div>
 	      					<div class="icon orange-bg"><img src="images/icons/dashboard.png" alt=""></div>
 	      					<div class="close-sidebar ms-auto">
@@ -105,7 +104,7 @@
 		        	<h1 class="text-uppercase me-3">Dashboard</h1>
 		        	<div class="calendar-wrap">
 		        		<div class="date-box">
-		        			1 Nov 2020 - 30 Nov 2020
+		        			<span>1 Nov 2020 - 30 Nov 2020</span>
 		        			<i class="fa fa-calendar" aria-hidden="true"></i>
 		        		</div>
 
@@ -114,7 +113,7 @@
 			                  	<div class="field">
 			                    	<div class="ui calendar" id="rangestart">
 			                      		<div class="ui input dark left icon">             
-					                        <input type="text" placeholder="From">
+					                        <input type="text" placeholder="From" class="">
 					                        <i class="fa fa-calendar" aria-hidden="true"></i>
 			                      		</div>
 			                    	</div>
@@ -122,11 +121,11 @@
 				                <div class="field">
 				                    <div class="ui calendar" id="rangeend">
 				                      	<div class="ui input left icon">
-				                        	<input type="text" placeholder="To">
+				                        	<input type="text" placeholder="To" class="" id="enddate-input">
 				                        	<i class="fa fa-calendar" aria-hidden="true"></i>
 				                      	</div>
 				                    </div>
-				                </div>
+				                </div>				                
 			                </div>
 			            </div>
 		        	</div>
@@ -266,7 +265,7 @@
 											<div class="not-found-content">
 												<div class="not-found-content-wrap">
 													<div class="">
-														<img src="images/404-small-img.png" alt="">
+														<img src="images/404.svg" alt="">
 													</div>
 													<div class="light-text mb-3">
 														<h3>OOPS!</h3>
@@ -298,7 +297,7 @@
                                             <div class="not-found-content">
 												<div class="not-found-content-wrap">
 													<div class="">
-														<img src="images/404-small-img.png" alt="">
+														<img src="images/404.svg" alt="">
 													</div>
 													<div class="light-text mb-3">
 														<h3>OOPS!</h3>
@@ -345,7 +344,7 @@
 												<div class="not-found-content">
 													<div class="not-found-content-wrap">
 														<div class="">
-															<img src="images/404-small-img.png" alt="">
+															<img src="images/404.svg" alt="">
 														</div>
 														<div class="light-text mb-3">
 															<h3>OOPS!</h3>
@@ -388,7 +387,7 @@
 											<div class="not-found-content">
 												<div class="not-found-content-wrap">
 													<div class="">
-														<img src="images/404-small-img.png" alt="">
+														<img src="images/404.svg" alt="">
 													</div>
 													<div class="light-text mb-3">
 														<h3>OOPS!</h3>
@@ -452,7 +451,7 @@
 		                                            <div class="not-found-content">
 														<div class="not-found-content-wrap">
 															<div class="">
-																<img src="images/404-small-img.png" alt="">
+																<img src="images/404.svg" alt="">
 															</div>
 															<div class="light-text mb-3">
 																<h3>OOPS!</h3>
@@ -472,7 +471,7 @@
 		                                            <div class="not-found-content">
 														<div class="not-found-content-wrap">
 															<div class="">
-																<img src="images/404-small-img.png" alt="">
+																<img src="images/404.svg" alt="">
 															</div>
 															<div class="light-text mb-3">
 																<h3>OOPS!</h3>
@@ -493,7 +492,7 @@
 		                                            <div class="not-found-content">
 														<div class="not-found-content-wrap">
 															<div class="">
-																<img src="images/404-small-img.png" alt="">
+																<img src="images/404.svg" alt="">
 															</div>
 															<div class="light-text mb-3">
 																<h3>OOPS!</h3>
@@ -528,7 +527,7 @@
                                             <div class="not-found-content">
 												<div class="not-found-content-wrap">
 													<div class="">
-														<img src="images/404-small-img.png" alt="">
+														<img src="images/404.svg" alt="">
 													</div>
 													<div class="light-text mb-3">
 														<h3>OOPS!</h3>
@@ -559,7 +558,7 @@
                                             <div class="not-found-content">
 												<div class="not-found-content-wrap">
 													<div class="">
-														<img src="images/404-small-img.png" alt="">
+														<img src="images/404.svg" alt="">
 													</div>
 													<div class="light-text mb-3">
 														<h3>OOPS!</h3>
@@ -967,20 +966,47 @@
 
 	
 	<script type="text/javascript">
-		$(".date-box").click(function(){
-		  	$(".ui.form").toggleClass("open");
+		$(function() {
+			var startDate = "";
+			var endDate = "";
+			$(".date-box").click(function(){
+			  	$(".ui.form").toggleClass("open");
+			});
+			$(".form .submit").click(function(){
+			  	$(".ui.form").removeClass("open");
+			});
+			$(".form .close-btn").click(function(){
+			  	$(".ui.form").removeClass("open");
+			});
+
+		    $('#rangestart').calendar({
+		      type: 'date',
+		      endCalendar: $('#rangeend'),
+		      onChange: function (date, text) {
+		      	if (text != "") {
+				  	startDate = text;
+				  	// setDate();
+			  	}
+			  },
+		    });
+		    $('#rangeend').calendar({
+		      type: 'date',
+		      startCalendar: $('#rangestart'),
+		      onChange: function (date, text) {
+		      	if (text != "") {
+		      		endDate = text;
+			  		setDate();	
+		      	}
+			  },
+		    });
+
+		    function setDate() {
+		    	if (startDate != "" && endDate != "") {
+			  		$(".ui.form").removeClass("open");
+		    	}
+		    	$('.date-box span').text(startDate + " - " + endDate);
+		    }
 		});
-
-	    $('#rangestart').calendar({
-	      type: 'date',
-	      endCalendar: $('#rangeend')
-	    });
-	    $('#rangeend').calendar({
-	      type: 'date',
-	      startCalendar: $('#rangestart')
-	    });
-
-
 	</script>
 
 	<script>
